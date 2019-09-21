@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ShoppingHelper</string>
+    <string name="summary">summary</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="zero">0</string>
+    <string name="vegetables">vegetables</string>
+    <string name="fruits">fruits</string>
+    <string name="drinks">drinks</string>
+    <string name="bakery">bakery</string>
+    <string name="other">other</string>
+    <string name="tomato">tomato</string>
+    <string name="onion">onion</string>
+    <string name="cocumber">cocumber</string>
+    <string name="potato">potato</string>
+    <string name="wrongQty">wrong quantity</string>
+</resources>

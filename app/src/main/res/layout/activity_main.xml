@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_column="2"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_column="2"
+        android:layout_columnWeight="2"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:id="@+id/vegetablesImage"
+        android:contentDescription="TODO"
+        android:src="@drawable/vegetables" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_column="2"
+        android:layout_columnWeight="2"
+        android:layout_row="1"
+        android:layout_rowWeight="1"
+        android:contentDescription="TODO"
+        android:src="@drawable/fruits" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_column="2"
+        android:layout_columnWeight="2"
+        android:layout_row="2"
+        android:layout_rowWeight="1"
+        android:contentDescription="TODO"
+        android:src="@drawable/drink" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_column="2"
+        android:layout_columnWeight="2"
+        android:layout_row="3"
+        android:layout_rowWeight="1"
+        android:contentDescription="TODO"
+        android:src="@drawable/bread" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_column="2"
+        android:layout_columnWeight="2"
+        android:layout_row="4"
+        android:layout_rowWeight="1"
+        android:contentDescription="TODO"
+        android:src="@drawable/other" />
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_column="2"
+        android:layout_columnWeight="2"
+        android:layout_row="5"
+        android:layout_rowWeight="1"
+        android:contentDescription="TODO"
+        android:src="@drawable/summary" />
+
+    <TextView
+        android:id="@+id/vegetables"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_column="0"
+        android:layout_columnWeight="3"
+        android:layout_row="0"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text="@string/vegetables" />
+
+    <TextView
+        android:id="@+id/fruits"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_column="0"
+        android:layout_columnWeight="3"
+        android:layout_row="1"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text="@string/fruits" />
+
+    <TextView
+        android:id="@+id/drinks"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_column="0"
+        android:layout_columnWeight="3"
+        android:layout_row="2"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text="@string/drinks" />
+
+    <TextView
+        android:id="@+id/bakery"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_column="0"
+        android:layout_columnWeight="3"
+        android:layout_row="3"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text="@string/bakery" />
+
+    <TextView
+        android:id="@+id/other"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_column="0"
+        android:layout_columnWeight="3"
+        android:layout_row="4"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text="@string/other" />
+
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_column="0"
+        android:layout_columnWeight="3"
+        android:layout_row="5"
+        android:layout_rowWeight="1"
+        android:gravity="center"
+        android:text="@string/summary" />
+
+</GridLayout>

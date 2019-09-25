@@ -11,7 +11,11 @@
     <string name="other">other</string>
     <string name="tomato">tomato</string>
     <string name="onion">onion</string>
-    <string name="cocumber">cocumber</string>
+    <string name="cucumber">cucumber</string>
     <string name="potato">potato</string>
+    <string name="paprika">paprika</string>
+    <string name="chive">chive</string>
+    <string name="parsley">parsley</string>
+    <string name="iceberg">iceberg</string>
     <string name="wrongQty">wrong quantity</string>
 </resources>

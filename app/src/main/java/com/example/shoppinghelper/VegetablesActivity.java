@@ -12,11 +12,11 @@ public class VegetablesActivity extends AppCompatActivity {
 
     private static int tomatoQty;
     private static int onionQty;
-    private static int cocumberQty;
+    private static int cucumberQty;
     private static int potatoQty;
     private static int paprikaQty;
-    private static int parsleyQty;
     private static int chiveQty;
+    private static int parsleyQty;
     private static int icebergQty;
     private static int garlicQty;
 
@@ -34,8 +34,7 @@ public class VegetablesActivity extends AppCompatActivity {
             }
         });
     }
-
-
+    //TODO >> add rest of the vegetables
     public void incrementTomato(View v) {
         int i = tomatoQty;
         String vegetableString = getString(R.string.tomato);
@@ -62,9 +61,9 @@ public class VegetablesActivity extends AppCompatActivity {
 
         onionQty = i;
     }
-    public void incrementCocumber(View v) {
-        int i = cocumberQty;
-        String vegetableString = getString(R.string.cocumber);
+    public void incrementCucumber(View v) {
+        int i = cucumberQty;
+        String vegetableString = getString(R.string.cucumber);
 
         if (i >= 9) {
             Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
@@ -73,7 +72,7 @@ public class VegetablesActivity extends AppCompatActivity {
             display(i, vegetableString);
         }
 
-        cocumberQty = i;
+        cucumberQty = i;
     }
     public void incrementPotato(View v) {
         int i = potatoQty;
@@ -87,6 +86,58 @@ public class VegetablesActivity extends AppCompatActivity {
         }
 
         potatoQty = i;
+    }
+    public void incrementPaprika(View v) {
+        int i = paprikaQty;
+        String vegetableString = getString(R.string.paprika);
+
+        if (i >= 9) {
+            Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
+        } else {
+            i++;
+            display(i, vegetableString);
+        }
+
+        paprikaQty = i;
+    }
+    public void incrementChive(View v) {
+        int i = chiveQty;
+        String vegetableString = getString(R.string.chive);
+
+        if (i >= 9) {
+            Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
+        } else {
+            i++;
+            display(i, vegetableString);
+        }
+
+        chiveQty = i;
+    }
+    public void incrementParsley(View v) {
+        int i = parsleyQty;
+        String vegetableString = getString(R.string.parsley);
+
+        if (i >= 9) {
+            Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
+        } else {
+            i++;
+            display(i, vegetableString);
+        }
+
+        parsleyQty = i;
+    }
+    public void incrementIceberg(View v) {
+        int i = icebergQty;
+        String vegetableString = getString(R.string.iceberg);
+
+        if (i >= 9) {
+            Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
+        } else {
+            i++;
+            display(i, vegetableString);
+        }
+
+        icebergQty = i;
     }
 
     public void decrementTomato(View v) {
@@ -115,9 +166,9 @@ public class VegetablesActivity extends AppCompatActivity {
 
         onionQty = i;
     }
-    public void decrementCocumber(View v) {
-        int i = cocumberQty;
-        String vegetableString = getString(R.string.cocumber);
+    public void decrementCucumber(View v) {
+        int i = cucumberQty;
+        String vegetableString = getString(R.string.cucumber);
 
         if (i <= 0) {
             Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
@@ -126,7 +177,7 @@ public class VegetablesActivity extends AppCompatActivity {
             display(i, vegetableString);
         }
 
-        cocumberQty = i;
+        cucumberQty = i;
     }
     public void decrementPotato(View v) {
         int i = potatoQty;
@@ -141,6 +192,58 @@ public class VegetablesActivity extends AppCompatActivity {
 
         potatoQty = i;
     }
+    public void decrementPaprika(View v) {
+        int i = paprikaQty;
+        String vegetableString = getString(R.string.paprika);
+
+        if (i <= 0) {
+            Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
+        } else {
+            i--;
+            display(i, vegetableString);
+        }
+
+        paprikaQty = i;
+    }
+    public void decrementChive(View v) {
+        int i = chiveQty;
+        String vegetableString = getString(R.string.chive);
+
+        if (i <= 0) {
+            Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
+        } else {
+            i--;
+            display(i, vegetableString);
+        }
+
+        chiveQty = i;
+    }
+    public void decrementParsley(View v) {
+        int i = parsleyQty;
+        String vegetableString = getString(R.string.parsley);
+
+        if (i <= 0) {
+            Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
+        } else {
+            i--;
+            display(i, vegetableString);
+        }
+
+        parsleyQty = i;
+    }
+    public void decrementIceberg(View v) {
+        int i = icebergQty;
+        String vegetableString = getString(R.string.iceberg);
+
+        if (i <= 0) {
+            Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
+        } else {
+            i--;
+            display(i, vegetableString);
+        }
+
+        icebergQty = i;
+    }
 
     //function that will display variables on desired position
     private void display(int qty, String vegetableName) {
@@ -148,17 +251,30 @@ public class VegetablesActivity extends AppCompatActivity {
         TextView qtyView = findViewById(iD);
         qtyView.setText("" + qty);
     }
+    //TODO >> add rest of the vegetables
     public static int getTomatoQty () {
         return tomatoQty;
     }
     public static int getOnionQty () {
         return onionQty;
     }
-    public static int getCocumberQty () {
-        return cocumberQty;
+    public static int getCucumberQty () {
+        return cucumberQty;
     }
     public static int getPotatoQty () {
         return potatoQty;
+    }
+    public static int getPaprikaQty () {
+        return paprikaQty;
+    }
+    public static int getChiveQty () {
+        return chiveQty;
+    }
+    public static int getParsleyQty () {
+        return parsleyQty;
+    }
+    public static int getIcebergQty () {
+        return icebergQty;
     }
 
 }

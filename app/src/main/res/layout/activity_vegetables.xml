@@ -3,7 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context=".VegetablesActivity">
+    tools:context=".VegetablesActivity"
+    android:layout_margin="10dp">
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
@@ -228,6 +229,37 @@
             android:text="@string/minus"
             android:onClick="decrementIceberg"
             android:layout_columnWeight="1"/>
+        <Button
+            android:layout_column="0"
+            android:id="@+id/garlicPlus"
+            android:onClick="incrementGarlic"
+            android:layout_row="8"
+            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="3"
+            android:text="@string/garlic"/>
+        <Button
+            android:layout_column="1"
+            android:id="@+id/garlic"
+            android:layout_row="8"
+            android:layout_height="50dp"
+            android:layout_width="0dp"
+            android:layout_columnWeight="1"
+            android:text="@string/zero"/>
+        <Button
+            android:layout_row="8"
+            android:id="@+id/garlicMinus"
+            android:layout_column="2"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="@string/minus"
+            android:onClick="decrementGarlic"
+            android:layout_columnWeight="1"/>
     </GridLayout>
+        <Button
+            android:id="@+id/infoSendVegetables"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="@string/toSend"/>
     </LinearLayout>
 </ScrollView>

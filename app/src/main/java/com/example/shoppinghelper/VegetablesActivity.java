@@ -25,7 +25,7 @@ public class VegetablesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_vegetables);
 
-        TextView vegetables = findViewById(R.id.tomato);
+        TextView vegetables = findViewById(R.id.infoSendVegetables);
         vegetables.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
@@ -34,6 +34,7 @@ public class VegetablesActivity extends AppCompatActivity {
             }
         });
     }
+
     //TODO >> add rest of the vegetables
     public void incrementTomato(View v) {
         int i = tomatoQty;
@@ -138,6 +139,19 @@ public class VegetablesActivity extends AppCompatActivity {
         }
 
         icebergQty = i;
+    }
+    public void incrementGarlic(View v) {
+        int i = garlicQty;
+        String vegetableString = getString(R.string.garlic);
+
+        if (i >= 9) {
+            Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
+        } else {
+            i++;
+            display(i, vegetableString);
+        }
+
+        garlicQty = i;
     }
 
     public void decrementTomato(View v) {
@@ -244,6 +258,19 @@ public class VegetablesActivity extends AppCompatActivity {
 
         icebergQty = i;
     }
+    public void decrementGarlic(View v) {
+        int i = garlicQty;
+        String vegetableString = getString(R.string.garlic);
+
+        if (i <= 0) {
+            Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
+        } else {
+            i--;
+            display(i, vegetableString);
+        }
+
+        garlicQty = i;
+    }
 
     //function that will display variables on desired position
     private void display(int qty, String vegetableName) {
@@ -275,6 +302,9 @@ public class VegetablesActivity extends AppCompatActivity {
     }
     public static int getIcebergQty () {
         return icebergQty;
+    }
+    public static int getGarlicQty () {
+        return garlicQty;
     }
 
 }

@@ -20,6 +20,10 @@ public class FruitsActivity extends AppCompatActivity {
     private static int nectarineQty;
     private static int pearQty;
     private static int grapeQty;
+    private static int watermelonQty;
+    private static int cherryQty;
+    private static int sweetCherryQty;
+    private static int kiwiQty;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -153,6 +157,58 @@ public class FruitsActivity extends AppCompatActivity {
 
         grapeQty = i;
     }
+    public void incrementWatermelon(View v) {
+        int i = watermelonQty;
+        String string = getString(R.string.watermelon);
+
+        if (i >= 9) {
+            Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
+        } else {
+            i++;
+            display(i, string);
+        }
+
+        watermelonQty = i;
+    }
+    public void incrementCherry(View v) {
+        int i = cherryQty;
+        String string = getString(R.string.cherry);
+
+        if (i >= 9) {
+            Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
+        } else {
+            i++;
+            display(i, string);
+        }
+
+        cherryQty = i;
+    }
+    public void incrementSweetCherry(View v) {
+        int i = sweetCherryQty;
+        String string = getString(R.string.sweetCherry);
+
+        if (i >= 9) {
+            Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
+        } else {
+            i++;
+            display(i, string);
+        }
+
+        sweetCherryQty = i;
+    }
+    public void incrementKiwi(View v) {
+        int i = kiwiQty;
+        String string = getString(R.string.kiwi);
+
+        if (i >= 9) {
+            Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
+        } else {
+            i++;
+            display(i, string);
+        }
+
+        kiwiQty = i;
+    }
 
     public void decrementApple(View v) {
         int i = appleQty;
@@ -271,6 +327,58 @@ public class FruitsActivity extends AppCompatActivity {
 
         grapeQty = i;
     }
+    public void decrementWatermelon(View v) {
+        int i = watermelonQty;
+        String string = getString(R.string.watermelon);
+
+        if (i <= 0) {
+            Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
+        } else {
+            i--;
+            display(i, string);
+        }
+
+        watermelonQty = i;
+    }
+    public void decrementCherry(View v) {
+        int i = cherryQty;
+        String string = getString(R.string.cherry);
+
+        if (i <= 0) {
+            Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
+        } else {
+            i--;
+            display(i, string);
+        }
+
+        cherryQty = i;
+    }
+    public void decrementSweetCherry(View v) {
+        int i = sweetCherryQty;
+        String string = getString(R.string.sweetCherry);
+
+        if (i <= 0) {
+            Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
+        } else {
+            i--;
+            display(i, string);
+        }
+
+        sweetCherryQty = i;
+    }
+    public void decrementKiwi(View v) {
+        int i = kiwiQty;
+        String string = getString(R.string.kiwi);
+
+        if (i <= 0) {
+            Toast.makeText(this, R.string.wrongQty, Toast.LENGTH_SHORT).show();
+        } else {
+            i--;
+            display(i, string);
+        }
+
+        kiwiQty = i;
+    }
 
     //function that will display variables on desired position
     private void display(int qty, String string) {
@@ -305,6 +413,18 @@ public class FruitsActivity extends AppCompatActivity {
     }
     public static int getGrapeQty () {
         return grapeQty;
+    }
+    public static int getWatermelonQty () {
+        return watermelonQty;
+    }
+    public static int getCherryQty () {
+        return cherryQty;
+    }
+    public static int getSweetCherryQty () {
+        return sweetCherryQty;
+    }
+    public static int getKiwiQty () {
+        return kiwiQty;
     }
 
 }

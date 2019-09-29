@@ -27,7 +27,6 @@ public class Summary extends AppCompatActivity {
         ArrayList<String> orderName = new ArrayList<>(); //list of names
         ArrayList<String> totalOrder = new ArrayList<>(); //list of both qty's + names
 
-        //TODO >> get the rest of stuff to order qty's
         //called qty data from another class
         int iTomato = VegetablesActivity.getTomatoQty();
         int iOnion = VegetablesActivity.getOnionQty();
@@ -38,6 +37,21 @@ public class Summary extends AppCompatActivity {
         int iParsley = VegetablesActivity.getParsleyQty();
         int iIceberg = VegetablesActivity.getIcebergQty();
         int iGarlic = VegetablesActivity.getGarlicQty();
+
+        int iApple = FruitsActivity.getAppleQty();
+        int iBanana = FruitsActivity.getBananaQty();
+        int iLemon = FruitsActivity.getLemonQty();
+        int iMandarin = FruitsActivity.getMandarinQty();
+        int iOrange = FruitsActivity.getOrangeQty();
+        int iPeach = FruitsActivity.getPeachQty();
+        int iNectarine = FruitsActivity.getNectarineQty();
+        int iPear = FruitsActivity.getPearQty();
+        int iGrape = FruitsActivity.getGrapeQty();
+        int iWatermelon = FruitsActivity.getWatermelonQty();
+        int iCherry = FruitsActivity.getCherryQty();
+        int iSweetCherry = FruitsActivity.getSweetCherryQty();
+        int iKiwi = FruitsActivity.getKiwiQty();
+        //TODO add rest of the fruits
 
         //lots of if's will check is each item ordered
         if (iTomato > 0) {
@@ -75,6 +89,58 @@ public class Summary extends AppCompatActivity {
         if (iGarlic > 0) {
             order.add(iGarlic);
             orderName.add(getString(R.string.garlic));
+        }
+        if (iApple > 0) {
+            order.add(iApple);
+            orderName.add(getString(R.string.apple));
+        }
+        if (iBanana > 0) {
+            order.add(iBanana);
+            orderName.add(getString(R.string.banana));
+        }
+        if (iLemon > 0) {
+            order.add(iLemon);
+            orderName.add(getString(R.string.lemon));
+        }
+        if (iMandarin > 0) {
+            order.add(iMandarin);
+            orderName.add(getString(R.string.mandarin));
+        }
+        if (iOrange > 0) {
+            order.add(iOrange);
+            orderName.add(getString(R.string.orange));
+        }
+        if (iPeach > 0) {
+            order.add(iPeach);
+            orderName.add(getString(R.string.peach));
+        }
+        if (iNectarine > 0) {
+            order.add(iNectarine);
+            orderName.add(getString(R.string.nectarine));
+        }
+        if (iPear > 0) {
+            order.add(iPear);
+            orderName.add(getString(R.string.pear));
+        }
+        if (iGrape > 0) {
+            order.add(iGrape);
+            orderName.add(getString(R.string.grape));
+        }
+        if (iWatermelon > 0) {
+            order.add(iWatermelon);
+            orderName.add(getString(R.string.watermelon));
+        }
+        if (iCherry > 0) {
+            order.add(iCherry);
+            orderName.add(getString(R.string.cherry));
+        }
+        if (iSweetCherry > 0) {
+            order.add(iSweetCherry);
+            orderName.add(getString(R.string.sweetCherry));
+        }
+        if (iKiwi > 0) {
+            order.add(iKiwi);
+            orderName.add(getString(R.string.kiwi));
         }
 
         //this function will add two arrays into one

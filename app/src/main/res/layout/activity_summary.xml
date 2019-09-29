@@ -37,5 +37,95 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="25sp" />
+    <TextView
+        android:id="@+id/order4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/order5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/order6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/order7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/order8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/order9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/order10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/order11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/order12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/order13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/order14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/order15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/order16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/order17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/order18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/order19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/order20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/order21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp" />
 
 </LinearLayout>

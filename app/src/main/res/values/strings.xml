@@ -42,4 +42,11 @@
     <string name="toSend">go to summary</string>
     <string name="nothingOrdered">nothing ordered</string>
     <string name="notReady">activity not ready yet</string>
+	<string name="water">water</string>
+    <string name="sparklingWater">sparklingWater</string>
+    <string name="fizzyDrink">fizzyDrink</string>
+    <string name="cola">cola</string>
+    <string name="juice">juice</string>
+    <string name="beer">beer</string>
+    <string name="vodka">vodka</string>
 </resources>

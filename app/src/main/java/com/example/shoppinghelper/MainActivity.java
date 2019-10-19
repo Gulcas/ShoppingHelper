@@ -58,18 +58,16 @@ public class MainActivity extends AppCompatActivity {
         drinks.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
-//                Intent intent = new Intent(MainActivity.this, FruitsActivity.class);
-//                startActivity(intent);
-                Toast.makeText(MainActivity.this, R.string.notReady, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, DrinksActivity.class);
+                startActivity(intent);
             }
         });
         ImageView drinksImage = findViewById(R.id.drinksImage);
         drinksImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
-//                Intent intent = new Intent(MainActivity.this, FruitsActivity.class);
-//                startActivity(intent);
-                Toast.makeText(MainActivity.this, R.string.notReady, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, DrinksActivity.class);
+                startActivity(intent);
             }
         });
 

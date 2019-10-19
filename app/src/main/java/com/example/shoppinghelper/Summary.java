@@ -1,16 +1,13 @@
 package com.example.shoppinghelper;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-
 import org.w3c.dom.Text;
-
 import java.util.ArrayList;
 
 public class Summary extends AppCompatActivity {
@@ -51,7 +48,14 @@ public class Summary extends AppCompatActivity {
         int iCherry = FruitsActivity.getCherryQty();
         int iSweetCherry = FruitsActivity.getSweetCherryQty();
         int iKiwi = FruitsActivity.getKiwiQty();
-        //TODO add rest of the fruits
+
+		int iWater = DrinksActivity.getWaterQty();
+		int iSparklingWater = DrinksActivity.getSparklingWaterQty();
+		int iFizzyDrink = DrinksActivity.getFizzyDrinkQty();
+		int iCola = DrinksActivity.getColaQty();
+		int iJuice = DrinksActivity.getJuiceQty();
+		int iBeer = DrinksActivity.getBeerQty();
+		int iVodka = DrinksActivity.getVodkaQty();
 
         //lots of if's will check is each item ordered
         if (iTomato > 0) {
@@ -141,6 +145,33 @@ public class Summary extends AppCompatActivity {
         if (iKiwi > 0) {
             order.add(iKiwi);
             orderName.add(getString(R.string.kiwi));
+        }
+		if (iWater > 0) {
+            order.add(iWater);
+            orderName.add(getString(R.string.water));
+        }
+        if (iSparklingWater > 0) {
+            order.add(iSparklingWater);
+            orderName.add(getString(R.string.sparklingWater));
+        }
+        if (iFizzyDrink > 0) {
+            order.add(iFizzyDrink);
+            orderName.add(getString(R.string.fizzyDrink));
+        }
+        if (iCola > 0) {
+            order.add(iCola);
+            orderName.add(getString(R.string.cola));
+        }
+        if (iJuice > 0) {
+            order.add(iJuice);
+            orderName.add(getString(R.string.juice));
+        }if (iBeer > 0) {
+            order.add(iBeer);
+            orderName.add(getString(R.string.beer));
+        }
+        if (iVodka > 0) {
+            order.add(iVodka);
+            orderName.add(getString(R.string.vodka));
         }
 
         //this function will add two arrays into one

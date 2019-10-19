@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppRafalTheme">
         <activity android:name=".FruitsActivity" />
+        <activity android:name=".DrinksActivity" />
         <activity android:name=".Summary" />
         <activity android:name=".VegetablesActivity" />
         <activity android:name=".MainActivity">

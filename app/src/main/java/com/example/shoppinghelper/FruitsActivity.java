@@ -39,7 +39,6 @@ public class FruitsActivity extends AppCompatActivity {
         });
     }
 
-    //TODO >> add rest of the fruits
     public void incrementApple(View v) {
         int i = appleQty;
         String string = getString(R.string.apple);
@@ -386,7 +385,7 @@ public class FruitsActivity extends AppCompatActivity {
         TextView qtyView = findViewById(iD);
         qtyView.setText("" + qty);
     }
-    //TODO >> add rest of the vegetables
+
     public static int getAppleQty () {
         return appleQty;
     }

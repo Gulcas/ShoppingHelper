@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import org.w3c.dom.Text;
 import java.util.ArrayList;
 
@@ -56,6 +58,13 @@ public class Summary extends AppCompatActivity {
 		int iJuice = DrinksActivity.getJuiceQty();
 		int iBeer = DrinksActivity.getBeerQty();
 		int iVodka = DrinksActivity.getVodkaQty();
+
+		int iSlicedBread = BakeryActivity.getSlicedBreadQty();
+		int iWholeBread = BakeryActivity.getWholeBreadQty();
+		int iRolls = BakeryActivity.getRollsQty();
+		int iSweetRolls = BakeryActivity.getSweetRollsQty();
+		int iDonuts = BakeryActivity.getDonutsQty();
+		int iPita = BakeryActivity.getPitaQty();
 
         //lots of if's will check is each item ordered
         if (iTomato > 0) {
@@ -173,15 +182,43 @@ public class Summary extends AppCompatActivity {
             order.add(iVodka);
             orderName.add(getString(R.string.vodka));
         }
+        if (iSlicedBread > 0) {
+            order.add(iSlicedBread);
+            orderName.add(getString(R.string.slicedBread));
+        }
+        if (iWholeBread > 0) {
+            order.add(iWholeBread);
+            orderName.add(getString(R.string.wholeBread));
+        }
+        if (iRolls > 0) {
+            order.add(iRolls);
+            orderName.add(getString(R.string.rolls));
+        }
+        if (iSweetRolls > 0) {
+            order.add(iSweetRolls);
+            orderName.add(getString(R.string.sweetRolls));
+        }
+        if (iDonuts > 0) {
+            order.add(iDonuts);
+            orderName.add(getString(R.string.donuts));
+        }
+        if (iPita > 0) {
+            order.add(iPita);
+            orderName.add(getString(R.string.pita));
+        }
 
         //this function will add two arrays into one
         for (int i = 0; i < order.size(); i++) {
             totalOrder.add(orderName.get(i) + ": " + order.get(i));
         }
 
-        /**function that display order on the screen*/
+        /**function that display order on the screen and on the beginning it checks is there less than 30 items in order*/
         int a = 1;
-        for (int i = 0; i < totalOrder.size(); i++) {
+        if (totalOrder.size() >= 30) {
+            Toast.makeText(this, R.string.toManyItems, Toast.LENGTH_SHORT).show();
+            TextView wrongQty = findViewById(R.id.order1);
+            wrongQty.setText(R.string.toManyItems);
+        } else for (int i = 0; i < totalOrder.size(); i++) {
             String orderViewNumber = "order" + a;
             int ID = getResources().getIdentifier(orderViewNumber, "id", getPackageName());
             TextView qtyView = findViewById(ID);

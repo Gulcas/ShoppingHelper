@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        //TODO finish with the rest of the activities
         //onClickListener for drinks
         TextView drinks = findViewById(R.id.drinks);
         drinks.setOnClickListener(new View.OnClickListener() {
@@ -76,27 +75,26 @@ public class MainActivity extends AppCompatActivity {
         bakery.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
-//                Intent intent = new Intent(MainActivity.this, FruitsActivity.class);
-//                startActivity(intent);
-                Toast.makeText(MainActivity.this, R.string.notReady, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, BakeryActivity.class);
+                startActivity(intent);
             }
         });
         ImageView bakeryImage = findViewById(R.id.bakeryImage);
         bakeryImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
-//                Intent intent = new Intent(MainActivity.this, FruitsActivity.class);
-//                startActivity(intent);
-                Toast.makeText(MainActivity.this, R.string.notReady, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, BakeryActivity.class);
+                startActivity(intent);
             }
         });
 
+        //TODO finish with the rest of the activities
         //onClickListener for other
         TextView other = findViewById(R.id.other);
         other.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
-//                Intent intent = new Intent(MainActivity.this, FruitsActivity.class);
+//                Intent intent = new Intent(MainActivity.this, OtherActivity.class);
 ////                startActivity(intent);
                 Toast.makeText(MainActivity.this, R.string.notReady, Toast.LENGTH_SHORT).show();
             }
@@ -105,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
         otherImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
-//                Intent intent = new Intent(MainActivity.this, FruitsActivity.class);
+//                Intent intent = new Intent(MainActivity.this, OtherActivity.class);
 //                startActivity(intent);
                 Toast.makeText(MainActivity.this, R.string.notReady, Toast.LENGTH_SHORT).show();
             }

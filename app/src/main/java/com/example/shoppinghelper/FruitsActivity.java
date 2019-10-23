@@ -39,6 +39,7 @@ public class FruitsActivity extends AppCompatActivity {
         });
     }
 
+    //TODO>> check why one of the fruits makes app crash
     public void incrementApple(View v) {
         int i = appleQty;
         String string = getString(R.string.apple);

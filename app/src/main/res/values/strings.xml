@@ -42,11 +42,18 @@
     <string name="toSend">go to summary</string>
     <string name="nothingOrdered">nothing ordered</string>
     <string name="notReady">activity not ready yet</string>
-	<string name="water">water</string>
+    <string name="water">water</string>
     <string name="sparklingWater">sparklingWater</string>
     <string name="fizzyDrink">fizzyDrink</string>
     <string name="cola">cola</string>
     <string name="juice">juice</string>
     <string name="beer">beer</string>
     <string name="vodka">vodka</string>
+    <string name="slicedBread">slicedBread</string>
+    <string name="wholeBread">wholeBread</string>
+    <string name="rolls">rolls</string>
+    <string name="sweetRolls">sweetRolls</string>
+    <string name="donuts">donuts</string>
+    <string name="pita">pita</string>
+    <string name="toManyItems">to many items ordered</string>
 </resources>

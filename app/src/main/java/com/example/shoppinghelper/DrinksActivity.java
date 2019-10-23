@@ -32,7 +32,6 @@ public class DrinksActivity extends AppCompatActivity {
         });
     }
 
-    //TODO >> add rest of the drinks
     public void incrementWater(View v) {
 		
         int i = waterQty;

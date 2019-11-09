@@ -66,6 +66,16 @@ public class Summary extends AppCompatActivity {
 		int iDonuts = BakeryActivity.getDonutsQty();
 		int iPita = BakeryActivity.getPitaQty();
 
+		int iToothpaste = OtherActivity.getToothpasteQty();
+		int iDishSoap = OtherActivity.getDishSoapQty();
+		int iToiletPaper = OtherActivity.getToiletPaperQty();
+		int iPaperTowels = OtherActivity.getPaperTowelsQty();
+		int iDiapers = OtherActivity.getDiapersQty();
+		int iShavingMachines = OtherActivity.getShavingMachinesQty();
+		int iShavingFoam = OtherActivity.getShavingFoamQty();
+		int iShampoo = OtherActivity.getShampooQty();
+		int iBubbleBath = OtherActivity.getBubbleBathQty();
+
         //lots of if's will check is each item ordered
         if (iTomato > 0) {
             order.add(iTomato);
@@ -205,6 +215,38 @@ public class Summary extends AppCompatActivity {
         if (iPita > 0) {
             order.add(iPita);
             orderName.add(getString(R.string.pita));
+        }
+        if (iToothpaste > 0) {
+            order.add(iToothpaste);
+            orderName.add(getString(R.string.toothpaste));
+        }
+        if (iDishSoap > 0) {
+            order.add(iDishSoap);
+            orderName.add(getString(R.string.dishSoap));
+        }
+        if (iToiletPaper > 0) {
+            order.add(iToiletPaper);
+            orderName.add(getString(R.string.toiletPaper));
+        }
+        if (iPaperTowels > 0) {
+            order.add(iPaperTowels);
+            orderName.add(getString(R.string.paperTowels));
+        }
+        if (iDiapers > 0) {
+            order.add(iDiapers);
+            orderName.add(getString(R.string.diapers));
+        }
+        if (iShavingMachines > 0) {
+            order.add(iShavingMachines);
+            orderName.add(getString(R.string.shavingMachines));
+        }
+        if (iShavingFoam > 0) {
+            order.add(iShavingFoam);
+            orderName.add(getString(R.string.shavingFoam));
+        }
+        if (iShampoo > 0) {
+            order.add(iShampoo);
+            orderName.add(getString(R.string.shampoo));
         }
 
         //this function will add two arrays into one

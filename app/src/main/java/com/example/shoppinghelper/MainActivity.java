@@ -94,18 +94,16 @@ public class MainActivity extends AppCompatActivity {
         other.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
-//                Intent intent = new Intent(MainActivity.this, OtherActivity.class);
-////                startActivity(intent);
-                Toast.makeText(MainActivity.this, R.string.notReady, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, OtherActivity.class);
+                startActivity(intent);
             }
         });
         ImageView otherImage = findViewById(R.id.otherImage);
         otherImage.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick (View v) {
-//                Intent intent = new Intent(MainActivity.this, OtherActivity.class);
-//                startActivity(intent);
-                Toast.makeText(MainActivity.this, R.string.notReady, Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, OtherActivity.class);
+                startActivity(intent);
             }
         });
 

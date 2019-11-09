@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ShoppingHelper</string>
+    <string name="app_name">Shopping Helper</string>
     <string name="summary">summary</string>
     <string name="send">send</string>
     <string name="email">testprogramos@gmail.com</string>
@@ -56,4 +56,13 @@
     <string name="donuts">donuts</string>
     <string name="pita">pita</string>
     <string name="toManyItems">to many items ordered</string>
+    <string name="toothpaste">toothpaste</string>
+    <string name="dishSoap">dishSoap</string>
+    <string name="toiletPaper">toiletPaper</string>
+    <string name="paperTowels">paperTowels</string>
+    <string name="diapers">diapers</string>
+    <string name="shavingMachines">shavingMachines</string>
+    <string name="shavingFoam">shavingFoam</string>
+    <string name="shampoo">shampoo</string>
+    <string name="bubbleBath">buubleBath</string>
 </resources>

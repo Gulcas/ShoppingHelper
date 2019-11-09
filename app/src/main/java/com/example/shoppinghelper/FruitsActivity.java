@@ -32,14 +32,13 @@ public class FruitsActivity extends AppCompatActivity {
         TextView vegetables = findViewById(R.id.infoSendFruits);
         vegetables.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick (View v) {
+            public void onClick(View v) {
                 Intent intent = new Intent(FruitsActivity.this, Summary.class);
                 startActivity(intent);
             }
         });
     }
 
-    //TODO>> check why one of the fruits makes app crash
     public void incrementApple(View v) {
         int i = appleQty;
         String string = getString(R.string.apple);
@@ -53,6 +52,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         appleQty = i;
     }
+
     public void incrementBanana(View v) {
         int i = bananaQty;
         String string = getString(R.string.banana);
@@ -66,6 +66,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         bananaQty = i;
     }
+
     public void incrementLemon(View v) {
         int i = lemonQty;
         String string = getString(R.string.lemon);
@@ -79,6 +80,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         lemonQty = i;
     }
+
     public void incrementMandarin(View v) {
         int i = mandarinQty;
         String string = getString(R.string.mandarin);
@@ -92,6 +94,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         mandarinQty = i;
     }
+
     public void incrementOrange(View v) {
         int i = orangeQty;
         String string = getString(R.string.orange);
@@ -105,6 +108,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         orangeQty = i;
     }
+
     public void incrementPeach(View v) {
         int i = peachQty;
         String string = getString(R.string.peach);
@@ -118,6 +122,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         peachQty = i;
     }
+
     public void incrementNectarine(View v) {
         int i = nectarineQty;
         String string = getString(R.string.nectarine);
@@ -131,6 +136,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         nectarineQty = i;
     }
+
     public void incrementPear(View v) {
         int i = pearQty;
         String string = getString(R.string.pear);
@@ -144,6 +150,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         pearQty = i;
     }
+
     public void incrementGrape(View v) {
         int i = grapeQty;
         String string = getString(R.string.grape);
@@ -157,6 +164,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         grapeQty = i;
     }
+
     public void incrementWatermelon(View v) {
         int i = watermelonQty;
         String string = getString(R.string.watermelon);
@@ -170,6 +178,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         watermelonQty = i;
     }
+
     public void incrementCherry(View v) {
         int i = cherryQty;
         String string = getString(R.string.cherry);
@@ -183,6 +192,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         cherryQty = i;
     }
+
     public void incrementSweetCherry(View v) {
         int i = sweetCherryQty;
         String string = getString(R.string.sweetCherry);
@@ -196,6 +206,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         sweetCherryQty = i;
     }
+
     public void incrementKiwi(View v) {
         int i = kiwiQty;
         String string = getString(R.string.kiwi);
@@ -223,6 +234,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         appleQty = i;
     }
+
     public void decrementBanana(View v) {
         int i = bananaQty;
         String string = getString(R.string.banana);
@@ -236,6 +248,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         bananaQty = i;
     }
+
     public void decrementLemon(View v) {
         int i = lemonQty;
         String string = getString(R.string.lemon);
@@ -249,6 +262,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         lemonQty = i;
     }
+
     public void decrementMandarin(View v) {
         int i = mandarinQty;
         String string = getString(R.string.mandarin);
@@ -262,6 +276,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         mandarinQty = i;
     }
+
     public void decrementOrange(View v) {
         int i = orangeQty;
         String string = getString(R.string.orange);
@@ -275,6 +290,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         orangeQty = i;
     }
+
     public void decrementPeach(View v) {
         int i = peachQty;
         String string = getString(R.string.peach);
@@ -288,6 +304,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         peachQty = i;
     }
+
     public void decrementNectarine(View v) {
         int i = nectarineQty;
         String string = getString(R.string.nectarine);
@@ -301,6 +318,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         nectarineQty = i;
     }
+
     public void decrementPear(View v) {
         int i = pearQty;
         String string = getString(R.string.pear);
@@ -314,6 +332,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         peachQty = i;
     }
+
     public void decrementGrape(View v) {
         int i = grapeQty;
         String string = getString(R.string.grape);
@@ -327,6 +346,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         grapeQty = i;
     }
+
     public void decrementWatermelon(View v) {
         int i = watermelonQty;
         String string = getString(R.string.watermelon);
@@ -340,6 +360,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         watermelonQty = i;
     }
+
     public void decrementCherry(View v) {
         int i = cherryQty;
         String string = getString(R.string.cherry);
@@ -353,6 +374,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         cherryQty = i;
     }
+
     public void decrementSweetCherry(View v) {
         int i = sweetCherryQty;
         String string = getString(R.string.sweetCherry);
@@ -366,6 +388,7 @@ public class FruitsActivity extends AppCompatActivity {
 
         sweetCherryQty = i;
     }
+
     public void decrementKiwi(View v) {
         int i = kiwiQty;
         String string = getString(R.string.kiwi);
@@ -387,43 +410,55 @@ public class FruitsActivity extends AppCompatActivity {
         qtyView.setText("" + qty);
     }
 
-    public static int getAppleQty () {
+    public static int getAppleQty() {
         return appleQty;
     }
-    public static int getBananaQty () {
+
+    public static int getBananaQty() {
         return bananaQty;
     }
-    public static int getLemonQty () {
+
+    public static int getLemonQty() {
         return lemonQty;
     }
-    public static int getMandarinQty () {
+
+    public static int getMandarinQty() {
         return mandarinQty;
     }
-    public static int getOrangeQty () {
+
+    public static int getOrangeQty() {
         return orangeQty;
     }
-    public static int getPeachQty () {
+
+    public static int getPeachQty() {
         return peachQty;
     }
-    public static int getNectarineQty () {
+
+    public static int getNectarineQty() {
         return nectarineQty;
     }
-    public static int getPearQty () {
+
+    public static int getPearQty() {
         return pearQty;
     }
-    public static int getGrapeQty () {
+
+    public static int getGrapeQty() {
         return grapeQty;
     }
-    public static int getWatermelonQty () {
+
+    public static int getWatermelonQty() {
         return watermelonQty;
     }
-    public static int getCherryQty () {
+
+    public static int getCherryQty() {
         return cherryQty;
     }
-    public static int getSweetCherryQty () {
+
+    public static int getSweetCherryQty() {
         return sweetCherryQty;
     }
-    public static int getKiwiQty () {
+
+    public static int getKiwiQty() {
         return kiwiQty;
     }
 
